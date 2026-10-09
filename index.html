@@ -1,410 +1,269 @@
+
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coiffeur Opfikon | By'blos Coiffeur Damen & Herren – Schaffhauserstrasse 86</title>
-<meta name="description" content="By'blos Coiffeur Damen And Herren in Opfikon: moderne und klassische Haarschnitte, Bartstyling und Styling für Damen und Herren. Schaffhauserstrasse 86, 8152 Opfikon. Termin anfragen: +41 76 424 89 18.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0E0E0E">
-<link rel="canonical" href="[byblos-coiffeur.ch](https://www.byblos-coiffeur.ch/)">
+<meta name="theme-color" content="#151411">
+<title>By'blos Coiffeur | Damen & Herren in Opfikon</title>
+<meta name="description" content="By'blos Coiffeur Damen & Herren in Opfikon. Besuchen Sie uns an der Schaffhauserstrasse 86 oder kontaktieren Sie uns telefonisch.">
 
-<meta property="og:type" content="website">
-<meta property="og:locale" content="de_CH">
-<meta property="og:site_name" content="By'blos Coiffeur Damen And Herren">
-<meta property="og:title" content="Coiffeur Opfikon | By'blos Coiffeur Damen & Herren">
-<meta property="og:description" content="Moderne und klassische Haarschnitte für Damen und Herren in Opfikon. Termin anfragen: +41 76 424 89 18.">
-<meta property="og:url" content="[byblos-coiffeur.ch](https://www.byblos-coiffeur.ch/)">
-
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
-<link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-<link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap)" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Strukturierte Daten: NUR verifizierte Angaben. Öffnungszeiten folgen erst nach Bestätigung. -->
-<script type="application/ld+json">
-{
-  "@context": "[schema.org](https://schema.org)",
-  "@type": "HairSalon",
-  "name": "By'blos Coiffeur Damen And Herren",
-  "image": "[byblos-coiffeur.ch](https://www.byblos-coiffeur.ch/images/salon-hero.jpg)",
-  "url": "[byblos-coiffeur.ch](https://www.byblos-coiffeur.ch/)",
-  "telephone": "+41764248918",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Schaffhauserstrasse 86",
-    "postalCode": "8152",
-    "addressLocality": "Opfikon",
-    "addressRegion": "ZH",
-    "addressCountry": "CH"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 47.4297,
-    "longitude": 8.5686
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Opfikon" },
-    { "@type": "City", "name": "Glattbrugg" },
-    { "@type": "City", "name": "Glattpark" },
-    { "@type": "City", "name": "Zürich" }
-  ],
-  "priceRange": "CHF"
+<style>
+:root {
+  --bg: #151411;
+  --panel: #201e19;
+  --gold: #d3b47a;
+  --cream: #f6f0e5;
+  --muted: #b8b1a4;
 }
-</script>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; width: 100%; object-fit: cover; }
+.wrap { width: min(1120px, 90%); margin: auto; }
+header {
+  background: #151411;
+  border-bottom: 1px solid #353128;
+}
+.nav {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.logo {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+.logo small {
+  display: block;
+  color: var(--cream);
+  font: 10px Arial, sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.links { display: flex; align-items: center; gap: 26px; }
+.links a { font-size: 13px; }
+.links a:hover { color: var(--gold); }
+.btn {
+  display: inline-block;
+  padding: 14px 23px;
+  background: var(--gold);
+  color: #17140f;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid var(--gold);
+  transition: .2s;
+}
+.btn:hover { background: transparent; color: var(--gold); }
+.btn-outline { background: transparent; color: var(--cream); border-color: #777064; }
+.hero {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(15,14,12,.94) 0%, rgba(15,14,12,.75) 48%, rgba(15,14,12,.25) 100%),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=2000&q=85") center 45%/cover;
+}
+.hero-content { max-width: 650px; padding: 85px 0; }
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; }
+h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.08; margin: 20px 0; }
+h1 span { color: var(--gold); font-style: italic; }
+.hero p { color: #ddd5c8; max-width: 480px; margin: 0 0 28px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+section { padding: 85px 0; }
+.section-head { max-width: 650px; margin-bottom: 36px; }
+.section-head h2 { font-size: clamp(32px, 5vw, 48px); line-height: 1.15; margin: 12px 0; }
+.section-head p { color: var(--muted); }
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.service {
+  background: var(--panel);
+  border: 1px solid #373329;
+  padding: 28px;
+}
+.service .number { color: var(--gold); font-size: 12px; letter-spacing: 2px; }
+.service h3 { font-size: 25px; margin: 15px 0 8px; }
+.service p { color: var(--muted); font-size: 14px; margin-bottom: 0; }
+.gallery {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 16px;
+}
+.gallery img { height: 300px; }
+.gallery img:first-child { height: 340px; }
+.gallery figure { margin: 0; overflow: hidden; background: var(--panel); }
+.gallery img { transition: transform .4s; }
+.gallery figure:hover img { transform: scale(1.04); }
+.note { color: var(--muted); font-size: 12px; margin-top: 15px; }
+.visit { background: #211f19; }
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.visit h2 { font-size: clamp(34px, 5vw, 48px); margin: 12px 0 22px; }
+.detail { padding: 16px 0; border-bottom: 1px solid #403b30; }
+.detail strong { display: block; color: var(--gold); font-size: 12px; letter-spacing: 1px; margin-bottom: 4px; }
+.visit-image { height: 390px; }
+footer { padding: 30px 0; color: var(--muted); font-size: 12px; }
+.footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+.whatsapp {
+  position: fixed; right: 20px; bottom: 20px; z-index: 5;
+  background: #25a45a; color: white; border-radius: 50px;
+  padding: 13px 18px; font-weight: bold; box-shadow: 0 4px 20px #0006;
+}
+@media(max-width: 760px) {
+  .nav { padding: 16px 0; align-items: flex-start; }
+  .links { gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+  .links a { font-size: 12px; }
+  .links .nav-cta { display: none; }
+  .logo { font-size: 22px; white-space: nowrap; }
+  .hero { min-height: 540px; background-position: 58% center; }
+  .hero-content { padding: 70px 0; }
+  section { padding: 62px 0; }
+  .services { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .gallery figure:first-child { grid-column: 1 / -1; }
+  .gallery img, .gallery img:first-child { height: 230px; }
+  .gallery figure:first-child img { height: 280px; }
+  .visit-grid { grid-template-columns: 1fr; gap: 28px; }
+  .visit-image { height: 270px; }
+}
+@media(max-width: 390px) {
+  .nav { flex-direction: column; }
+  .links { justify-content: flex-start; }
+}
+</style>
 </head>
+
 <body>
-
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
-
-<!-- ============ HEADER ============ -->
-<header class="site-header" id="header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand" aria-label="By'blos Coiffeur – Startseite">
-      <span class="brand-name">By'blos</span>
-      <span class="brand-sub">Coiffeur Damen &amp; Herren</span>
-    </a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
-      <ul>
-        <li><a href="#salon">Salon</a></li>
-        <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="#termin" class="nav-cta">Termin anfragen</a></li>
-      </ul>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#home">BY'BLOS<small>COIFFEUR · DAMEN & HERREN</small></a>
+    <nav class="links" aria-label="Hauptnavigation">
+      <a href="#services">Angebot</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn nav-cta" href="tel:+41764248918">Termin anfragen</a>
     </nav>
   </div>
 </header>
 
-<main id="main">
-
-<!-- ============ HERO ============ -->
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-media" aria-hidden="true">
-    <!-- ECHTES SALONFOTO EINFÜGEN:
-         Datei speichern als images/salon-hero.jpg und src unten austauschen.
-         Solange kein eigenes Foto vorliegt, bleibt dieser Platzhalter sichtbar. -->
-    <div class="photo-placeholder photo-placeholder--hero">
-      <span class="ph-label">Platzhalter: echtes Salonfoto</span>
-      <span class="ph-hint">images/salon-hero.jpg</span>
-    </div>
-  </div>
-
-  <div class="container hero-content">
-    <p class="hero-eyebrow">Opfikon · Glattbrugg · Glattpark · Zürich</p>
-    <h1 id="hero-title">
-      Coiffeur in Opfikon –<br>
-      <em>Damen &amp; Herren</em>
-    </h1>
-    <p class="hero-text">
-      Präzise Haarschnitte, moderne Fades und gepflegtes Styling –
-      mitten an der Schaffhauserstrasse 86 in Opfikon.
-    </p>
-    <div class="hero-actions">
-      <a href="#termin" class="btn btn--gold">Termin anfragen</a>
-      <a href="[google.com](https://www.google.com/maps/dir/?api=1&destination=Schaffhauserstrasse+86%2C+8152+Opfikon%2C+Switzerland)"
-         class="btn btn--ghost" target="_blank" rel="noopener">Route anzeigen</a>
-    </div>
-    <p class="hero-note">Telefonisch erreichbar: <a href="tel:+41764248918">+41 76 424 89 18</a></p>
-  </div>
-</section>
-
-<!-- ============ SALON / INTRO ============ -->
-<section class="section" id="salon" aria-labelledby="salon-title">
-  <div class="container intro-grid">
-    <div class="intro-text reveal">
-      <p class="eyebrow">Der Salon</p>
-      <h2 id="salon-title">Handwerk, das sitzt.</h2>
-      <p>
-        By'blos Coiffeur Damen And Herren ist Ihr Coiffeur in Opfikon –
-        für Damen und Herren. Wir arbeiten ruhig, sorgfältig und mit Blick
-        für das, was zu Ihnen passt: klassische Schnitte, moderne Fades,
-        Bartpflege und Styling.
-      </p>
-      <p>
-        Sie finden uns an der Schaffhauserstrasse 86, gut erreichbar aus
-        Opfikon, Glattbrugg, Glattpark und Zürich. Rufen Sie an oder
-        schicken Sie uns eine Anfrage – wir melden uns persönlich bei Ihnen.
-      </p>
-      <a href="tel:+41764248918" class="link-arrow">Jetzt anrufen</a>
-    </div>
-    <div class="intro-media reveal">
-      <!-- ECHTES SALONFOTO EINFÜGEN: images/salon-innen.jpg -->
-      <div class="photo-placeholder">
-        <span class="ph-label">Platzhalter: Salon-Innenansicht</span>
-        <span class="ph-hint">images/salon-innen.jpg</span>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-content">
+        <div class="eyebrow">Opfikon · Zürich</div>
+        <h1>Dein Stil.<br><span>Dein Auftritt.</span></h1>
+        <p>By'blos Coiffeur Damen & Herren – ein Ort für deinen nächsten Look. Wir freuen uns auf deinen Besuch.</p>
+        <div class="actions">
+          <a class="btn" href="tel:+41764248918">Jetzt anrufen</a>
+          <a class="btn btn-outline" href="#kontakt">So findest du uns</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ LEISTUNGEN ============ -->
-<section class="section section--dark" id="leistungen" aria-labelledby="leistungen-title">
-  <div class="container">
-    <header class="section-head reveal">
-      <p class="eyebrow">Leistungen</p>
-      <h2 id="leistungen-title">Unsere Leistungen</h2>
-      <p class="section-sub">
-        Preise auf Anfrage – bitte kontaktieren Sie uns telefonisch.
-      </p>
-    </header>
-
-    <div class="cards">
-      <article class="card reveal">
-        <h3>Herrenhaarschnitte</h3>
-        <p>Klassische und moderne Herrenhaarschnitte, sauber ausgeführt und auf Ihren Haarwuchs abgestimmt.</p>
-        <p class="card-price">Preis auf Anfrage</p>
-      </article>
-
-      <article class="card reveal">
-        <h3>Fade &amp; moderne Styles</h3>
-        <p>Übergänge, Fades und zeitgemässe Formen – präzise gearbeitet und sauber ausrasiert.</p>
-        <p class="card-price">Preis auf Anfrage</p>
-      </article>
-
-      <article class="card reveal">
-        <h3>Bartpflege &amp; Bartstyling</h3>
-        <p>Bart in Form bringen, Konturen nachziehen und pflegen. <em>[Bestätigung des Salons ausstehend]</em></p>
-        <p class="card-price">Preis auf Anfrage</p>
-      </article>
-
-      <article class="card reveal">
-        <h3>Damenhaarschnitte</h3>
-        <p>Schnitte und Formen für Damen – beraten, geschnitten und gepflegt. <em>[Bestätigung des Salons ausstehend]</em></p>
-        <p class="card-price">Preis auf Anfrage</p>
-      </article>
-    </div>
-
-    <p class="disclaimer reveal">
-      Diese Leistungen wurden noch nicht offiziell bestätigt. Wir veröffentlichen
-      erst dann weitere Angaben (Hautpflege, Maniküre, Styling), wenn der Salon
-      sie bestätigt hat.
-    </p>
-  </div>
-</section>
-
-<!-- ============ GALERIE ============ -->
-<section class="section" id="galerie" aria-labelledby="galerie-title">
-  <div class="container">
-    <header class="section-head reveal">
-      <p class="eyebrow">Galerie</p>
-      <h2 id="galerie-title">Unsere Arbeit</h2>
-      <p class="section-sub">
-        Hier zeigen wir echte Resultate aus dem Salon. Die Bilder werden vom
-        Salon zur Verfügung gestellt – bis dahin sehen Sie Platzhalter.
-      </p>
-    </header>
-
-    <div class="gallery-filters reveal" role="group" aria-label="Galerie filtern">
-      <button class="filter-btn is-active" data-filter="all">Alle</button>
-      <button class="filter-btn" data-filter="herren">Herren</button>
-      <button class="filter-btn" data-filter="damen">Damen</button>
-    </div>
-
-    <div class="gallery" id="gallery">
-      <!-- ECHTE FOTOS EINFÜGEN: images/galerie-01.jpg … entsprechend anpassen -->
-      <figure class="gallery-item reveal" data-cat="herren">
-        <div class="photo-placeholder photo-placeholder--square">
-          <span class="ph-label">Platzhalter: Herren-Haarschnitt</span>
-          <span class="ph-hint">images/galerie-01.jpg</span>
-        </div>
-        <figcaption>Herren-Haarschnitt</figcaption>
-      </figure>
-      <figure class="gallery-item reveal" data-cat="herren">
-        <div class="photo-placeholder photo-placeholder--square">
-          <span class="ph-label">Platzhalter: Fade</span>
-          <span class="ph-hint">images/galerie-02.jpg</span>
-        </div>
-        <figcaption>Fade &amp; Konturen</figcaption>
-      </figure>
-      <figure class="gallery-item reveal" data-cat="herren">
-        <div class="photo-placeholder photo-placeholder--square">
-          <span class="ph-label">Platzhalter: Bartpflege</span>
-          <span class="ph-hint">images/galerie-03.jpg</span>
-        </div>
-        <figcaption>Bartpflege</figcaption>
-      </figure>
-      <figure class="gallery-item reveal" data-cat="damen">
-        <div class="photo-placeholder photo-placeholder--square">
-          <span class="ph-label">Platzhalter: Damen-Haarschnitt</span>
-          <span class="ph-hint">images/galerie-04.jpg</span>
-        </div>
-        <figcaption>Damen-Haarschnitt</figcaption>
-      </figure>
-      <figure class="gallery-item reveal" data-cat="damen">
-        <div class="photo-placeholder photo-placeholder--square">
-          <span class="ph-label">Platzhalter: Styling</span>
-          <span class="ph-hint">images/galerie-05.jpg</span>
-        </div>
-        <figcaption>Styling</figcaption>
-      </figure>
-      <figure class="gallery-item reveal" data-cat="damen">
-        <div class="photo-placeholder photo-placeholder--square">
-          <span class="ph-label">Platzhalter: Föhnen</span>
-          <span class="ph-hint">images/galerie-06.jpg</span>
-        </div>
-        <figcaption>Föhnen &amp; Finish</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VERTRAUEN ============ -->
-<section class="section section--beige" aria-labelledby="trust-title">
-  <div class="container">
-    <header class="section-head reveal">
-      <p class="eyebrow">Warum By'blos</p>
-      <h2 id="trust-title">Vier gute Gründe</h2>
-    </header>
-    <div class="trust-grid">
-      <div class="trust-item reveal">
-        <span class="trust-num">01</span>
-        <h3>Damen und Herren</h3>
-        <p>Ein Salon für beide – mit Gespür für unterschiedliche Haartypen und Wünsche.</p>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Unser Angebot</div>
+        <h2>Dein Look, dein Stil.</h2>
+        <p>Ob klassisch oder modern – kontaktiere uns für Informationen zu unseren Angeboten und einen passenden Termin.</p>
       </div>
-      <div class="trust-item reveal">
-        <span class="trust-num">02</span>
-        <h3>Zentral in Opfikon</h3>
-        <p>Schaffhauserstrasse 86 – gut erreichbar aus Opfikon, Glattbrugg, Glattpark und Zürich.</p>
-      </div>
-      <div class="trust-item reveal">
-        <span class="trust-num">03</span>
-        <h3>Persönliche Beratung</h3>
-        <p>Wir hören zu, bevor wir schneiden. Ihre Wünsche stehen im Zentrum.</p>
-      </div>
-      <div class="trust-item reveal">
-        <span class="trust-num">04</span>
-        <h3>Direkter Kontakt</h3>
-        <p>Kein Umweg über Formulare ins Nichts – rufen Sie uns an, wir antworten persönlich.</p>
+      <div class="services">
+        <article class="service">
+          <div class="number">01 / DAMEN</div>
+          <h3>Damen Coiffeur</h3>
+          <p>Entdecke deinen persönlichen Look. Frage uns nach den verfügbaren Leistungen und Terminen.</p>
+        </article>
+        <article class="service">
+          <div class="number">02 / HERREN</div>
+          <h3>Herren Coiffeur</h3>
+          <p>Du suchst einen frischen Look? Kontaktiere uns und erkundige dich nach unserem Angebot.</p>
+        </article>
+        <article class="service">
+          <div class="number">03 / BERATUNG</div>
+          <h3>Persönlich beraten</h3>
+          <p>Wir helfen dir gerne weiter. Ruf uns an, um deinen Besuch zu besprechen.</p>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ TERMIN ============ -->
-<section class="section section--dark" id="termin" aria-labelledby="termin-title">
-  <div class="container termini-grid">
-    <div class="reveal">
-      <p class="eyebrow">Termin</p>
-      <h2 id="termin-title">Termin anfragen</h2>
-      <p>
-        Der schnellste Weg zu Ihrem Termin ist ein Anruf. Wir klären direkt
-        mit Ihnen, wann es passt und wie lange Sie einplanen sollten.
-      </p>
-      <p class="small-note">
-        Hinweis: Diese Website hat noch kein Online-Buchungssystem. Ein Termin
-        ist erst verbindlich, wenn wir ihn persönlich bestätigt haben.
-      </p>
+  <section id="galerie">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Inspiration</div>
+        <h2>Dein nächster Look.</h2>
+        <p>Entdecke Inspiration für deinen nächsten Coiffeur-Besuch.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80" alt="Inspiration für einen modernen Herrenhaarschnitt" loading="lazy"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Coiffeur Salon Inspiration" loading="lazy"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Salon und Haarstyling Inspiration" loading="lazy"></figure>
+      </div>
+      <p class="note">Hinweis: Die Bilder dienen als Inspiration und zeigen nicht zwingend unseren Salon.</p>
     </div>
+  </section>
 
-    <div class="contact-actions reveal">
-      <a href="tel:+41764248918" class="action-card action-card--primary">
-        <span class="action-label">Anrufen</span>
-        <span class="action-value">+41 76 424 89 18</span>
-      </a>
-
-      <!-- WhatsApp: nur aktiv, wenn der Salon diese Nummer für WhatsApp bestätigt.
-           Die Nummer ist identisch mit der verifizierten Telefonnummer. -->
-      <a href="[wa.me](https://wa.me/41764248918?text=Guten%20Tag%2C%20ich%20m%C3%B6chte%20einen%20Termin%20bei%20By%27blos%20Coiffeur%20anfragen)"
-         class="action-card" target="_blank" rel="noopener">
-        <span class="action-label">WhatsApp</span>
-        <span class="action-value">Nachricht senden</span>
-      </a>
-
-      <a href="[google.com](https://www.google.com/maps/dir/?api=1&destination=Schaffhauserstrasse+86%2C+8152+Opfikon%2C+Switzerland)"
-         class="action-card" target="_blank" rel="noopener">
-        <span class="action-label">Route</span>
-        <span class="action-value">Google Maps öffnen</span>
-      </a>
+  <section class="visit" id="kontakt">
+    <div class="wrap visit-grid">
+      <div>
+        <div class="eyebrow">Besuche uns</div>
+        <h2>Wir freuen uns auf dich.</h2>
+        <p style="color:var(--muted)">Melde dich telefonisch für Fragen oder um deinen Besuch zu planen.</p>
+        <div class="detail">
+          <strong>ADRESSE</strong>
+          Schaffhauserstrasse 86<br>8152 Opfikon, Schweiz
+        </div>
+        <div class="detail">
+          <strong>TELEFON</strong>
+          <a href="tel:+41764248918">+41 76 424 89 18</a>
+        </div>
+        <div class="detail">
+          <strong>ÖFFNUNGSZEITEN</strong>
+          Bitte telefonisch erfragen.
+        </div>
+        <div class="actions" style="margin-top:25px">
+          <a class="btn" href="tel:+41764248918">Jetzt anrufen</a>
+          <a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Schaffhauserstrasse+86%2C+8152+Opfikon">Route planen</a>
+        </div>
+      </div>
+      <img class="visit-image" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85" alt="Coiffeur Salon Inspiration" loading="lazy">
     </div>
-  </div>
-</section>
-
-<!-- ============ KONTAKT ============ -->
-<section class="section" id="kontakt" aria-labelledby="kontakt-title">
-  <div class="container contact-grid">
-    <div class="reveal">
-      <p class="eyebrow">Kontakt</p>
-      <h2 id="kontakt-title">So finden Sie uns</h2>
-
-      <address class="contact-block">
-        <strong>By'blos Coiffeur Damen And Herren</strong><br>
-        Schaffhauserstrasse 86<br>
-        8152 Opfikon<br>
-        Schweiz
-      </address>
-
-      <p class="contact-line">
-        Telefon: <a href="tel:+41764248918">+41 76 424 89 18</a>
-      </p>
-
-      <h3 class="contact-sub">Öffnungszeiten</h3>
-      <table class="hours-table">
-        <caption class="visually-hidden">Öffnungszeiten – noch nicht bestätigt</caption>
-        <tbody>
-          <tr><th scope="row">Montag – Samstag</th><td>10:00 – 20:00 Uhr *</td></tr>
-          <tr><th scope="row">Sonntag</th><td>Geschlossen *</td></tr>
-        </tbody>
-      </table>
-      <p class="small-note">
-        * Unbestätigt. Diese Zeiten stammen aus einem Verzeichniseintrag und
-        wurden vom Salon noch nicht bestätigt. Bitte telefonisch prüfen.
-      </p>
-    </div>
-
-    <div class="map-wrap reveal">
-      <iframe
-        title="Karte: By'blos Coiffeur, Schaffhauserstrasse 86, 8152 Opfikon"
-        src="[google.com](https://www.google.com/maps?q=Schaffhauserstrasse+86,+8152+Opfikon,+Switzerland&output=embed)"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen></iframe>
-    </div>
-  </div>
-</section>
-
+  </section>
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <p class="footer-brand">By'blos Coiffeur Damen &amp; Herren</p>
-      <p class="footer-addr">
-        Schaffhauserstrasse 86<br>
-        8152 Opfikon, Schweiz<br>
-        <a href="tel:+41764248918">+41 76 424 89 18</a>
-      </p>
-    </div>
-    <div>
-      <p class="footer-head">Navigation</p>
-      <ul class="footer-list">
-        <li><a href="#salon">Salon</a></li>
-        <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="#termin">Termin anfragen</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="footer-head">Rechtliches</p>
-      <ul class="footer-list">
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <p>© <span id="year">2026</span> By'blos Coiffeur Damen And Herren. Alle Rechte vorbehalten.</p>
+<footer>
+  <div class="wrap footer-inner">
+    <span>© <span id="year">2026</span> By'blos Coiffeur Damen & Herren</span>
+    <span>Schaffhauserstrasse 86 · 8152 Opfikon</span>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<a class="whatsapp" href="https://wa.me/41764248918" target="_blank" rel="noopener" aria-label="WhatsApp kontaktieren">WhatsApp</a>
 </body>
 </html>
